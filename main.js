@@ -35,7 +35,10 @@ function fishBtnClicked() {
 }
 
 function catchFish(codChance, salmonChance, tropicalChance, pufferChance) {
-  
+  let randNum = Math.random();
+  if (randNum < codChance) {
+    catchCod()
+  }
 }
 
 function catchCod() {
